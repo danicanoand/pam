@@ -4,7 +4,7 @@
 # - crear usuaris locals
 # -------------------------------------------
 groupadd localgrp01
-groupadd localgrp01
+groupadd localgrp02
 useradd -g users -G localgrp01 local01
 useradd -g users -G localgrp01 local02
 useradd -g users -G localgrp01 local03
