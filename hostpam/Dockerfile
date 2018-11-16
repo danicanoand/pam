@@ -8,7 +8,9 @@ LABEL description="hos PAM 2018-2019"
 RUN dnf -y install procps vim passwd openldap-clients nss-pam-ldapd
 RUN mkdir /opt/docker
 COPY * /opt/docker/
-RUN cp /opt/docker/ldap.conf /etc/openldap/ldap.conf
 RUN chmod +x /opt/docker/*.sh
+RUN  cp /opt/docker/ldap.conf /etc/openldap/ldap.conf
+RUN  cp /opt/docker/nsswitch.conf /etc/nsswitch.conf
+RUN  cp /opt/docker/nslcd.conf /etc/nslcd.conf
 WORKDIR /opt/docker
 CMD ["/opt/docker/startup.sh"]
