@@ -20,3 +20,4 @@ session     [success=1 default=ignore] pam_succeed_if.so service in crond quiet 
 session		optional	pam_mkhomedir.so 	
 session		sufficient	pam_unix.so
 session		sufficient	pam_ldap.so
+session		optional	pam_mount.so

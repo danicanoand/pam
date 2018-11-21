@@ -14,5 +14,6 @@ RUN  cp /opt/docker/nsswitch.conf /etc/nsswitch.conf
 RUN  cp /opt/docker/nslcd.conf /etc/nslcd.conf
 RUN  cp /etc/pam.d/system-auth /etc/pam.d/system-auth.bk
 RUN  cp /opt/docker/system-auth /etc/pam.d/system-auth
+RUN cp /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
 WORKDIR /opt/docker
 CMD ["/opt/docker/startup.sh"]
