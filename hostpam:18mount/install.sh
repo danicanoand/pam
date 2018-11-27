@@ -17,4 +17,3 @@ echo "local03" | passwd --stdin local03
 echo "local04" | passwd --stdin local04
 echo "local05" | passwd --stdin local05
 echo "local06" | passwd --stdin local06
-authconfig  --enableshadow --enablelocauthorize --enableldap  --ldapserver='server' --ldapbase='dc=edt,dc=org' --enableldapauth --updateall
